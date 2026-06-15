@@ -408,8 +408,8 @@ footer{background:var(--navy3);padding:5rem 0 2rem;border-top:2px solid var(--or
         <div class="s-label">Who We Are</div>
         <h2 class="s-title">Your Trusted Partner in Petroleum Equipment</h2>
         <div class="bar"></div>
-        <p style="color:var(--gray);font-size:0.92rem;line-height:1.8;font-weight:300;margin-bottom:1rem">SNB ENGG are distributors of high-quality nozzles, hose pipes, swivel joints, and a full range of fuel station equipment. We work directly with premium manufacturers to bring you reliable, industry-standard products for every petroleum infrastructure need.</p>
-        <p style="color:var(--gray);font-size:0.92rem;line-height:1.8;font-weight:300;margin-bottom:1.5rem">We believe in providing quality products to our customers — always sourced from premium-grade materials, always backed by our expertise and commitment to your satisfaction.</p>
+        <p style="color:var(--navy);font-size:0.92rem;line-height:1.8;font-weight:300;margin-bottom:1rem">SNB ENGG are distributors of high-quality nozzles, hose pipes, swivel joints, and a full range of fuel station equipment. We work directly with premium manufacturers to bring you reliable, industry-standard products for every petroleum infrastructure need.</p>
+        <p style="color:var(--navy);font-size:0.92rem;line-height:1.8;font-weight:300;margin-bottom:1.5rem">We believe in providing quality products to our customers — always sourced from premium-grade materials, always backed by our expertise and commitment to your satisfaction.</p>
         <div class="about-points">
           <div class="about-point"><div class="point-icon">✦</div>Authorised distributors of leading petroleum equipment manufacturers</div>
           <div class="about-point"><div class="point-icon">✦</div>All products sourced from premium quality materials</div>
@@ -566,7 +566,6 @@ footer{background:var(--navy3);padding:5rem 0 2rem;border-top:2px solid var(--or
       <p class="s-sub" style="margin:0 auto;text-align:center">Quality, reliability, and genuine partnership — at every step.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card fu d1"><div class="why-num">01</div><h3>Premium Quality</h3><p>Every product sourced from quality materials and verified through stringent checks before dispatch.</p></div>
       <div class="why-card fu d2"><div class="why-num">02</div><h3>Customisation</h3><p>We adapt products to your specifications — dimensions, materials, or branded configurations.</p></div>
       <div class="why-card fu d3"><div class="why-num">03</div><h3>Trusted Partners</h3><p>Authorised distributors of leading manufacturers, giving you access to the best in petroleum equipment.</p></div>
       <div class="why-card fu d1"><div class="why-num">04</div><h3>Reliable Supply</h3><p>Pan-India distribution with efficient logistics to keep your projects moving without delays.</p></div>
@@ -625,7 +624,7 @@ footer{background:var(--navy3);padding:5rem 0 2rem;border-top:2px solid var(--or
         </div>
         <div class="contact-item">
           <div class="c-icon">📍</div>
-          <div class="c-detail"><div class="label">Location</div><div class="val">Office No. C-002, Shree Samriddhi Bldg., Mira Road (East), Thane – 401107, Maharashtra</div></div>
+          <div class="c-detail"><div class="label">Location</div><div class="val">Office No. C-002, Shree Samriddhi Bldg., Mira Road (East), Mumbai – 401107, Maharashtra</div></div>
         </div>
       </div>
       <div class="contact-form fu d2">
@@ -653,7 +652,7 @@ footer{background:var(--navy3);padding:5rem 0 2rem;border-top:2px solid var(--or
           </select>
         </div>
         <div class="form-group"><label>Message</label><textarea placeholder="Describe your requirements, quantities, or custom specifications..."></textarea></div>
-        <button class="submit-btn" onclick="handleSubmit()">Send Enquiry →</button>
+        <button class="submit-btn" onclick="handleSubmit()">Send Enquiry on WhatsApp →</button>
       </div>
     </div>
   </div>
@@ -729,11 +728,10 @@ window.addEventListener('scroll', () => {
 function handleSubmit() {
   const name = document.querySelector('input[placeholder="Your name"]').value.trim();
   const email = document.querySelector('input[type="email"]').value.trim();
+  const msg = document.querySelector('textarea') ? document.querySelector('textarea').value.trim() : '';
   if (!name || !email) { alert('Please enter your name and email.'); return; }
-  const btn = document.querySelector('.submit-btn');
-  btn.textContent = '✓ Enquiry Sent — We will be in touch shortly!';
-  btn.style.background = '#2a9d5c';
-  btn.disabled = true;
+  const waMessage = encodeURIComponent('Hi SNB ENGG, I would like to enquire.\n\nName: ' + name + '\nEmail: ' + email + (msg ? '\nMessage: ' + msg : ''));
+  window.open('https://wa.me/919004422126?text=' + waMessage, '_blank');
 }
 
 /* ══════════════════════════════════════════════
@@ -1676,7 +1674,7 @@ document.addEventListener('keydown', e => {
             </div>
             <div class="fo-card-id">
               <div class="fo-card-role fo-role-alt">Founder &amp; CEO</div>
-              <div class="fo-card-name">Mr Mukesh</div>
+              <div class="fo-card-name">Mr. Mukesh Vishwas</div>
               <div class="fo-card-company">SNB Engg.</div>
             </div>
           </div>
@@ -1705,13 +1703,13 @@ document.addEventListener('keydown', e => {
             </div>
             <div class="fo-card-id">
               <div class="fo-card-role">Co-Founder &amp; Proprietor</div>
-              <div class="fo-card-name">Miss Pooja</div>
+              <div class="fo-card-name">Mrs. Pooja Sharma</div>
               <div class="fo-card-company">SNB Engg.</div>
             </div>
           </div>
           <div class="fo-card-right">
             <div class="fo-quote">"Quality products and lasting relationships — that's the foundation we built SNB Engg. on."</div>
-            <p>Miss Pooja is the founding force behind SNB Engg. With a deep commitment to quality and customer satisfaction, she established the company in Thane, Maharashtra in 2019 with a clear mission — to become a trusted supplier of fuel dispensing equipment and petroleum infrastructure products across India.</p>
+            <p>Miss Pooja is the founding force behind SNB Engg. With a deep commitment to quality and customer satisfaction, she established the company in Mumbai, Maharashtra in 2019 with a clear mission — to become a trusted supplier of fuel dispensing equipment and petroleum infrastructure products across India.</p>
             <p>Her vision of transparent, professional service has defined how SNB Engg. operates — from the first enquiry to the final delivery. Under her guidance, the company has grown into a recognised name in the fuel station equipment space, serving petrol pumps, industrial facilities, and commercial operations nationwide.</p>
             <div class="fo-tags">
               <span>Company Vision</span>
@@ -1733,7 +1731,7 @@ document.addEventListener('keydown', e => {
           <div class="s-label">Our Story</div>
           <h2 class="fo-story-title">Built on Trust.<br>Driven by Quality.</h2>
           <div style="width:50px;height:3px;background:var(--orange);margin:1rem 0 1.5rem"></div>
-          <p>At SNB Engg., we are committed to delivering dependable and efficient solutions in the field of fuel dispensing equipment. Established in 2019 and located in Thane, Maharashtra, our company operates as a trusted trader and supplier of advanced fuel dispensing systems designed to meet the evolving requirements of modern fuel management.</p>
+          <p>At SNB Engg., we are committed to delivering dependable and efficient solutions in the field of fuel dispensing equipment. Established in 2019 and located in Mumbai, Maharashtra, our company operates as a trusted trader and supplier of advanced fuel dispensing systems designed to meet the evolving requirements of modern fuel management.</p>
           <p>With a focus on quality, performance, and customer satisfaction, we supply products that help businesses operate their fuel distribution processes smoothly and efficiently — from single-nozzle dispensers to complete HDPE underground piping systems.</p>
           <p>Our business philosophy is centred on building lasting relationships through transparency, reliability, and professional service. From understanding specific needs to ensuring timely product availability, our team works diligently to provide a smooth and satisfactory experience for every client we serve.</p>
         </div>
@@ -1744,7 +1742,7 @@ document.addEventListener('keydown', e => {
               <div class="fo-stat-lbl">Year Established</div>
             </div>
             <div class="fo-stat">
-              <div class="fo-stat-num">Thane</div>
+              <div class="fo-stat-num">Mumbai</div>
               <div class="fo-stat-lbl">Maharashtra, India</div>
             </div>
             <div class="fo-stat">
